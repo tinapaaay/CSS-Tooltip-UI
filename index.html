@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Tooltip UI</title>
+  <meta
+    name="description"
+    content="Navigation tooltips made with HTML and CSS."
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">CSS-only interaction</p>
+    <h1>Hover over a navigation item</h1>
+    <p class="intro">
+      Tooltips also appear when navigating with the keyboard.
+    </p>
+
+    <nav aria-label="Main navigation">
+      <ul class="navigation-list">
+        <li class="nav-item">
+          <a href="#" aria-describedby="tooltip-home">Home</a>
+          <span class="tooltip" id="tooltip-home" role="tooltip">
+            Go to the homepage
+          </span>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" aria-describedby="tooltip-projects">Projects</a>
+          <span class="tooltip" id="tooltip-projects" role="tooltip">
+            Here is everything I have built
+          </span>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" aria-describedby="tooltip-blog">Blog</a>
+          <span class="tooltip" id="tooltip-blog" role="tooltip">
+            Read my learning notes
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </main>
+</body>
+</html>
